@@ -1,16 +1,83 @@
-# wakandabooks_assignment
+# E-Commerce Shop App Design for Homepage
 
-A new Flutter project.
+A Flutter e-commerce shop app that demonstrates modern UI implementation with GetX state management and API integration.
+
+## Features
+
+- Modern UI with Material Design 3
+- Product listing with lazy loading
+- Search functionality
+- Like/Unlike products with animations
+- Pull-to-refresh
+- Shimmer loading effects
+- Error handling with retry options
+- Smooth animations and micro-interactions
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter (latest stable version)
+- Android Studio / VS Code
+- An Android/iOS device or emulator
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Install Flutter**
+   bash
+   # Download Flutter from https://flutter.dev/docs/get-started/install
+   # Add Flutter to your PATH
+   
+   # Verify installation
+   flutter doctor
+   
+
+2. **Clone the Repository**
+   bash
+   git clone https://github.com/anubhavmishra77/demo-ecommerce.git
+   cd ecommerce-shop-app
+   
+
+3. **Install Dependencies**
+   bash
+   flutter pub get
+   
+
+4. **Run the App**
+   bash
+   # Debug mode
+   flutter run
+
+   # Release mode
+   flutter run --release
+   
+
+### Building for Release
+
+1. **Android**
+   bash
+   # Generate APK
+   flutter build apk --release
+
+   # Generate Android App Bundle
+   flutter build appbundle --release
+   
+   APK location: `build/app/outputs/flutter-apk/app-release.apk`
+
+2. **iOS**
+   bash
+   # From the root of the project
+   cd ios
+   pod install
+   cd ..
+   flutter build ios --release
+   
+
+### Troubleshooting
+
+1. **Clean and Rebuild**
+   bash
+   flutter clean
+   flutter pub get
+   flutter run
+   
